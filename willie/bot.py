@@ -440,7 +440,6 @@ class Willie(irc.Bot):
 
     def bind_commands(self):
         self.commands = {'high': {}, 'medium': {}, 'low': {}}
-        self.scheduler.clear_jobs()
 
         def bind(priority, regexp, func):
             # Function name is no longer used for anything, as far as I know,
